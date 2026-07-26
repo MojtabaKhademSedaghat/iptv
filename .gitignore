@@ -7,3 +7,5 @@ node_modules
 /.api/
 .env
 /temp/
+dead-channels.txt
+alive-channels.txt

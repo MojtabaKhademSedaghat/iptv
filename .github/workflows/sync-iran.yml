@@ -14,22 +14,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download Iran playlist
+      - name: Download and prune dead Iran streams
         run: |
-          mkdir -p docs
-          curl -fsSL "https://iptv-org.github.io/iptv/countries/ir.m3u" -o docs/index.m3u
+          set -euo pipefail
+          mkdir -p docs scripts
+          curl -fsSL "https://iptv-org.github.io/iptv/countries/ir.m3u" -o /tmp/ir-raw.m3u
+          python3 scripts/prune_dead_streams.py /tmp/ir-raw.m3u docs/index.m3u
           cp docs/index.m3u docs/ir.m3u
           touch docs/.nojekyll
+          echo "Alive channels: $(grep -c '^#EXTINF' docs/index.m3u || true)"
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/index.m3u docs/ir.m3u docs/.nojekyll
+          git add docs/index.m3u docs/ir.m3u docs/.nojekyll scripts/prune_dead_streams.py
           if git diff --cached --quiet; then
             echo "No playlist changes"
             exit 0
           fi
           CHANNELS=$(grep -c '^#EXTINF' docs/index.m3u || true)
-          git commit -m "Sync Iran playlist ($CHANNELS channels)"
+          git commit -m "Sync pruned Iran playlist ($CHANNELS live channels)"
           git push

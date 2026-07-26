@@ -18,7 +18,7 @@ https://mojtabakhademsedaghat.github.io/iptv/ir.m3u
 
 ## همگام‌سازی
 
-Workflowی `sync-iran` هر ۱۲ ساعت پلی‌لیست ایران را از منبع اصلی می‌گیرد و داخل `docs/` به‌روز می‌کند.
+Workflowی `sync-iran` هر ۱۲ ساعت پلی‌لیست ایران را از iptv-org می‌گیرد، استریم‌های مرده (۴۰۳/۴۰۴/تایم‌اوت و …) را حذف می‌کند، و فقط کانال‌های زنده را در `docs/` منتشر می‌کند.
 
 دستی هم می‌توانید از تب **Actions** → **sync-iran** → **Run workflow** اجرا کنید.
 
