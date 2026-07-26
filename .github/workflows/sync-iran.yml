@@ -1,0 +1,35 @@
+name: sync-iran
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */12 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download Iran playlist
+        run: |
+          mkdir -p docs
+          curl -fsSL "https://iptv-org.github.io/iptv/countries/ir.m3u" -o docs/index.m3u
+          cp docs/index.m3u docs/ir.m3u
+          touch docs/.nojekyll
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/index.m3u docs/ir.m3u docs/.nojekyll
+          if git diff --cached --quiet; then
+            echo "No playlist changes"
+            exit 0
+          fi
+          CHANNELS=$(grep -c '^#EXTINF' docs/index.m3u || true)
+          git commit -m "Sync Iran playlist ($CHANNELS channels)"
+          git push
