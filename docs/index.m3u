@@ -223,8 +223,6 @@ https://euhls.persiana.live/hls/stream.m3u8
 https://twohls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaSeries.fr@HD" tvg-logo="" group-title="Series",Persiana Series
 https://onehls.persiana.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaTeen.fr@SD" tvg-logo="" group-title="Kids",Persiana Teen
-https://kphls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaTurkiye.fr@SD" tvg-logo="" group-title="Entertainment",Persiana Turkiye
 https://turkhls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaVibe.fr@HD" tvg-logo="" group-title="Music",Persiana Vibe
