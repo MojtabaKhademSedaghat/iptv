@@ -75,6 +75,8 @@ https://fxtvhls.wns.live/hls/stream.m3u8
 https://glserver1.tamashaland.com/live/aBCH96886YznRbGOiqTnnQ__/stream_0.m3u8
 #EXTINF:-1 tvg-id="GoldStar.ir@SD" tvg-logo="" group-title="Movies",Gold Star
 https://moviethls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="GolkhaneTv.ir@SD" tvg-logo="https://static.telewebion.com/channelsLogo/686599d8-c1ee-4557-aa72-b1293a21906d/default" group-title="Undefined",Golkhane TV
+https://ncdn.telewebion.ir/golkhane/live/playlist.m3u8
 #EXTINF:-1 tvg-id="GrandCinema.tr@SD" tvg-logo="" group-title="Movies",Grand Cinema
 https://gcinemahls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="HabibTV.ir@SD" tvg-logo="https://i.ibb.co/spZRy7mg/habib.png" group-title="Religious",Habib TV
@@ -145,6 +147,8 @@ https://ncdn.telewebion.ir/khoozestan/live/playlist.m3u8
 https://ncdn.telewebion.ir/kish/live/playlist.m3u8
 #EXTINF:-1 tvg-id="KordestanTV.ir@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/thumb/2/2c/Sanandaj_KORDESTAN.svg/960px-Sanandaj_KORDESTAN.svg.png" group-title="General",Kordestan
 https://ncdn.telewebion.ir/kordestan/live/playlist.m3u8
+#EXTINF:-1 tvg-id="LabbaykTV.ir@SD" tvg-logo="https://static.telewebion.com/channelsLogo/ZDVlODRiYjI3NWUyOTFmOGJmYjIwOTQyMDAyMzRkMmUzYjVmOGUyMTBhNTE0MGI5ZDAyOTMzZDdmZDQyNDM5OA/default" group-title="Undefined",Labbayk TV
+https://ncdn.telewebion.ir/labbayk/live/playlist.m3u8
 #EXTINF:-1 tvg-id="MaahTV.my@SD" tvg-logo="https://i.imgur.com/FkyueH6.png" group-title="Movies",Maah TV (720p)
 https://hls.maahtv.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="MahabadTV.ir@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/c/cb/Mahabad_tv.png" group-title="General",Mahabad
@@ -171,8 +175,6 @@ https://ncdn.telewebion.ir/noor/live/playlist.m3u8
 https://ncdn.telewebion.ir/ofogh/live/playlist.m3u8
 #EXTINF:-1 tvg-id="IRIBOmid.ir@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/IRIB_Omid.svg/500px-IRIB_Omid.svg.png" group-title="Kids",Omid
 https://ncdn.telewebion.ir/omid/live/playlist.m3u8
-#EXTINF:-1 tvg-id="OmideIranTV.us@SD" tvg-logo="https://i.imgur.com/CeMf68L.png" group-title="Entertainment",Omide Iran
-https://oitnhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="OXIRTV.ir@SD" tvg-logo="https://i.imgur.com/MGMhUDx.png" group-title="Entertainment",OXIR TV
 https://hls.oxir.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="Palestinetv.ir@SD" tvg-logo="https://i.ibb.co/svrZNZTX/Palestine.png" group-title="General",Palestine
@@ -242,6 +244,8 @@ https://rjtvhls.wns.live/hls/stream.m3u8
 https://avr.host247.net/live/rasoulallahtv/playlist.m3u8
 #EXTINF:-1 tvg-id="RazaviTV.ir@SD" tvg-logo="https://static.telewebion.com/channelsLogo/85f466a7-7d17-4ce8-bee6-13da4ff5deb1/default" group-title="Undefined",Razavi TV
 https://ncdn.telewebion.ir/razavi/live/playlist.m3u8
+#EXTINF:-1 tvg-id="RoyaTV.ir@SD" tvg-logo="https://static.telewebion.com/channelsLogo/0e3d7425-1a1b-47c4-b020-2e09a5fc2598/default" group-title="Undefined",Roya TV
+https://ncdn.telewebion.ir/iribu/live/playlist.m3u8
 #EXTINF:-1 tvg-id="SabalanTV.ir@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/f/f2/Ardabil_SABALAN.png" group-title="Undefined",Sabalan
 https://ncdn.telewebion.ir/sabalan/live/playlist.m3u8
 #EXTINF:-1 tvg-id="SabzTV.ir@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Logo_Golestan.png/960px-Logo_Golestan.png" group-title="General",Sabz
